@@ -61,4 +61,4 @@ E copiei meus arquivos do front para a pasta padrão do apache. Para isso eu tiv
 sudo cp index.html script.js styles.css /var/www/html
 ```
 
-Eu mudei colocando o ip do back no js mas não funcionou...
+No script.js eu coloquei o ip publico do backend e então a conexão foi feita.
