@@ -32,6 +32,13 @@ para depois rodar meu arquivo main.py:
 python3 -m main.py
 ```
 
+É preciso mudar a porta no back com o ipttables
+
+```
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 5000
+sudo iptables -I INPUT -p tcp --dport 5000 -j ACCEPT
+```
+
 # Frontend
 
 Agora eu vou no EC2 criar uma instancia para meu backend. Permiti os tráfegos e criei. Depois da instância ser criada eu aloquei um ip elástico nela. Depois disso eu me conectei na instancia e rodei esses comandos:
