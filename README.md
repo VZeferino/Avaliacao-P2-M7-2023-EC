@@ -62,3 +62,20 @@ sudo cp index.html script.js styles.css /var/www/html
 ```
 
 No script.js eu coloquei o ip publico do backend e então a conexão foi feita.
+
+
+### Rotas
+
+As rotas foram acessadas mas por algum motivo fica dando erro interno.
+
+<img src="/media/post rota.png">
+<img src="/media/get rotas.png">
+
+# Seguem demais imagens 
+<img src="/media/RDS.png">
+<img src="/media/criação do banco e back rodando.png">
+<img src="/media/ec2 rodando.png">
+<img src="/media/front apache.png">
+
+# FRONT DOS DEUSES
+<img src="/media/css.png">
