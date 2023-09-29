@@ -35,8 +35,8 @@ python3 -m main.py
 É preciso mudar a porta no back com o ipttables
 
 ```
-sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 5000
-sudo iptables -I INPUT -p tcp --dport 5000 -j ACCEPT
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8000
+sudo iptables -I INPUT -p tcp --dport 8000 -j ACCEPT
 ```
 
 # Frontend
@@ -60,3 +60,5 @@ E copiei meus arquivos do front para a pasta padrão do apache. Para isso eu tiv
 ```
 sudo cp index.html script.js styles.css /var/www/html
 ```
+
+Eu mudei colocando o ip do back no js mas não funcionou...
